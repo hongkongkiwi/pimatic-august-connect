@@ -1,0 +1,47 @@
+
+/*
+.ui-btn-inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: .625em;
+}*/
+
+.maxthermodevice .unit {
+  color: #888888;
+  margin-left: 0.1em;
+}
+#index li.maxthermodevice div.controls {
+  float: right;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  text-align: right;
+  white-space: normal;
+}
+
+#index li.maxthermodevice div.controls .ui-controlgroup{
+  display: inline-block;
+  margin: 0;
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 0.8em;
+}
+
+#index li.maxthermodevice div.controls .ui-group-theme-a{
+  border-radius: 2em
+}
+
+#index li.maxthermodevice div.controls .ui-controlgroup .ui-btn{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#index li.maxthermodevice div.controls .spinbox input{
+  border: none;
+  background: none;
+  height: 29.75px;
+  font-weight: bold;
+}

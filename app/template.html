@@ -1,0 +1,29 @@
+<script id="MaxThermostatDevice-template" type="text/template">
+  <li class="sortable device no-header maxthermodevice">
+    <label data-bind="text: name" class="device-label"></label>
+      <div class="controls">
+        <!-- ko if: $data.getConfig('guiShowModeControl')  -->
+        <div data-role="controlgroup" data-type="horizontal" data-mini="true" data-enhanced="true" class="button-control ui-controlgroup ui-controlgroup-horizontal ui-corner-all ui-mini no-carousel-slide">
+          <div class="ui-controlgroup-controls">
+            <a class="ui-first-child ui-btn ui-corner-all" name="autoButton" data-bind="click: modeAuto">auto</a>
+            <a class="ui-btn ui-corner-all" name="manuButton" data-bind="click: modeManu">manu</a>
+            <a class="ui-last-child ui-btn ui-corner-all" name="boostButton" data-bind="click: modeBoost">boost</a>
+          </div>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: $data.getConfig('guiShowPresetControl')  -->
+        <div data-role="controlgroup" data-type="horizontal" data-mini="true" data-enhanced="true" class="button-control ui-controlgroup ui-controlgroup-horizontal ui-corner-all ui-mini no-carousel-slide">
+          <div class="ui-controlgroup-controls">
+            <a class="ui-first-child ui-btn ui-corner-all" name="ecoButton" data-bind="click: modeEco">eco</a>
+            <a class="ui-last-child ui-btn ui-corner-all" name="comfyButton" data-bind="click: modeComfy">comfy</a>
+          </div>
+        </div>
+        <!-- /ko -->
+        <!-- ko if: $data.getConfig('guiShowTemperatueInput') -->
+        <div class="spinbox no-carousel-slide">
+          <input type="text" data-role="spinbox" name="spin" value="0" min="0" max="100" data-mini="true" step="0.5" data-bind="textInput: inputValue" />
+        </div>
+        <!-- /ko -->
+      </div>
+  </li>
+</script>
